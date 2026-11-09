@@ -239,4 +239,30 @@ footer p {
   .grid {
     grid-template-columns: 1fr;
   }
+} 
+
+/* IMÁGENES DE LAS SECCIONES */
+.imagen-seccion {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 25px auto;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+.imagen-seccion:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 105, 210, 0.18);
+}
+
+/* IMÁGENES EN CELULARES */
+@media (max-width: 600px) {
+  .imagen-seccion {
+    height: 200px;
+  }
 }
